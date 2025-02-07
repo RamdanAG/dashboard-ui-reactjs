@@ -7,19 +7,19 @@
 }
 
 :root {
-  --clr-primary: #29221d;
-  --clr-primar-light: #473b33;
-  --clr-secondary: #1e1611;
+  --clr-primary: #394867;
+  --clr-primar-light: #69584c;
+  --clr-secondary: #14274E;
   --clr-white: #fff;
   --clr-black: #000;
-  --clr-pumpkin: #fe6c00;
-  --clr-silver: #a8a5a6;
-  --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #fe1e00;
-  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
+  --clr-pumpkin: #F0A500;
+  --clr-silver: #ffffff;
+  --clr-silver-v1: #ffffff;
+  --clr-scarlet: #B6EB7A;
+  --clr-scarlet-v1: #B6EB7A;
   --clr-green: #00fe93;
   --clr-yellow: #fec80a;
-  --clr-jet: #302924;
+  --clr-jet: #473f3a;
   --clr-peach: #ffc397;
   --font-family-bai: "Bai Jamjuree", sans-serif;
   --transition-default: all 300ms ease-in-out;
@@ -75,16 +75,12 @@ button {
 }
 
 /* commons */
-.lg-value {
-  font-size: 24px;
-  font-weight: 600;
-}
 .grid-common {
   background-color: var(--clr-primary);
-  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
   color: var(--clr-white);
   padding: 24px;
+  border-radius: 9px;
 }
 .grid-c-title {
   display: flex;

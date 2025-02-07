@@ -1,0 +1,154 @@
+.sidebar{
+    background-color: var(--clr-primary);
+    width: 250px;
+    padding: 36px 20px;
+    transition: var(--transition-default);
+}
+
+.user-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.info-name{
+    font-weight: 500;
+}
+
+.info-descripction{
+    font-size: 14px;
+    color: var(--clr-white);
+}
+
+.info-img{
+    width: 49px;
+    height: 49px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: rgba(red, green, blue, 0.35);
+}
+
+.info-name{
+    font-size: 20px;
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+.navigation{
+    margin-top: 20px;
+    height: 600px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--clr-white);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 6px rgba(red, green, blue, 0.3);
+        border-radius: 16px;
+    }
+}
+
+.sidebar-change{
+    margin-left: -260px;
+}
+
+.nav-item{
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.nav-link{
+    display: block;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6px 14px;
+    column-gap: 16px;
+    letter-spacing: 0.03rem;
+    border: 1px solid transparent;
+    transition: var(--transition-default);
+}
+
+.nav-link:hover{
+    border: 1px solid var(--clr-primary-light);
+}
+
+
+.nav-link-icon{
+    width: 22px;
+}
+
+.nav-link-text{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1400px){
+    .sidebar{
+        padding: 24px 16px;
+    }
+}
+
+.sidebar-line{
+    width: 100%;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 1200px){
+    .sidebar{
+        width: 72px;
+        padding-right: 12px ;
+        padding-left: 12px;
+    }
+
+    .sidebar-change{
+        margin-left: -72px;
+    }
+
+    .info-user{
+        display: none;
+    }
+
+    .nav-item{
+        display: flex;
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-link{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+    }
+    .nav-link-text{
+        display: none;
+    }
+    .nav-link.active{
+        border-radius:100% ;
+    }
+    .nav-link.hover{
+        border-radius:100% ;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .sidebar{
+        margin-left: -72px;
+    }
+    .sidebar-change{
+        margin-left: 0;
+    }
+}
